@@ -1,0 +1,31 @@
+# RetosAcademiaX
+//Declaracion de las variables
+//numeros
+let a = 1;
+let b = 2;
+//texto
+let c ='1';
+let d = '2';
+//objeto
+let h = {valor: 1};
+let i = {valor: 1};
+//booleanos
+let j = true;
+let k = false;
+//aritmeticos
+let l = 10;
+let m = 3;
+
+//Zona proceso y solucion
+console.log("¿El numero 1 es mayor que el numero 2? "+!(a>b));
+console.log("¿El numero 1 es menor que el numero 2? "+!(a<b));
+console.log("¿El numero 1 es igual al numero 2? "+(a==b));
+console.log("¿El texto 1 es igual al texto 2? "+(c==d));
+console.log("¿Los objetos son iguales? "+(h==i));
+console.log("AND logico: "+(j&&k));
+console.log("OR logico: "+(j||k));
+console.log("La suma de 10+3: "+(l+m));
+console.log("La resta de 10-3: "+(l-m));
+console.log("La multiplicacion de 10*3: "+(l*m));
+console.log("La division de 10/3: "+(l/m));
+console.log("10 modulo de 3: "+(l%m));
