@@ -1,0 +1,15 @@
+//Zona declaracion de variables
+let nombre = "Juan";
+let saludo = "¡Hola mundo!";
+let array =[1, 2, 3, 4, 5];
+let texto = "La lluvia en sevilla es una maravilla";
+
+//zona proceso e impresion
+console.log(saludo+" Soy "+nombre);
+console.log("Mi nombre en mayuscula es: "+ nombre.toUpperCase());
+console.log("Mi nombre en minuscula es: "+ nombre.toLowerCase());
+console.log("El mensaje de "+saludo+" tiene "+saludo.length+ " catarcteres");
+console.log("El tercer valor del array con los valores "+ array +" es "+ array[array.length-3]);
+console.log("Se añade el siguente arreglo y es :" +array.push(6));
+let regex = /luvia/;
+console.log("Se encontro el pantron 'lluvia' en el texto "+texto+", por lo que el resultado es: "+regex.source);
