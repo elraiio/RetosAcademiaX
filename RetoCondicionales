@@ -2,9 +2,9 @@
 //La persona es mayor de edad o es menor
 let numEdad = 21;
 if (numEdad >= 18) {
-    console.log('Eres mayor de edad');
+    console.log('Eres mayor de edad.');
 } else {
-    console.log('Eres menor de edad');
+    console.log('Eres menor de edad.');
 }
 
 //Elige la accion que desea realizar
@@ -12,22 +12,22 @@ let accionRea = 'crear';
 
 switch (accionRea) {
     case 'crear':
-        console.log('La accion es crear');
+        console.log('La accion es crear.');
         break;
     case 'colocar':
-        console.log('La accion es colocar');
+        console.log('La accion es colocar.');
         break;
     case 'actualizar':
-        console.log('La accion es actualizar');
+        console.log('La accion es actualizar.');
         break;
     case 'borrar':
-        console.log('La accion es borrar');
+        console.log('La accion es borrar.');
         break;
     default:
-        console.log('ingrese una opcion valida');
+        console.log('ingrese una opcion valida.');
         break;
 }
 
 //Si el numero es par o impar
-let numPar = numEdad %2===0 ? 'El numero ingresado es par' : 'El numero ingresado es impar';
+let numPar = numEdad %2===0 ? 'El numero ingresado es par.' : 'El numero ingresado es impar.';
 console.log(numPar);
