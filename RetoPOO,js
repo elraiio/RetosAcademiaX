@@ -1,0 +1,47 @@
+# RetosAcademiaX
+// Sistema de vehiculos
+
+// 1. Crea una clase Vehículo(Padre)
+class Vehiculo {
+    constructor (ruedas, capacidad, asiento){
+        this.ruedas = ruedas;
+        this.capacidad = capacidad;
+        this.asiento = asiento;
+    }
+    detalles(){
+        return `Este vehiculo tiene ${this.ruedas} ruedas, Capacidad Carga: ${this.capacidad}, Asiento: ${this.asiento}, `;
+    }
+}
+
+// 2. Subclases Hijos
+// 2.1- Bicicleta
+class Bicileta extends Vehiculo {
+    constructor(ruedas, capacidad, asiento, tipo){
+        super(ruedas, capacidad, asiento);// heredamos atributos del padre
+      this.tipo = tipo; // atributos especificos de la bicicleta
+    }
+    detalleBici(){//concatenamos los detalles del objeto padre
+        return super.detalles() +  ` Tipo: ${this.tipo}`;
+    }
+}
+
+//2.2 Automovil
+class Automovil extends Vehiculo {
+    constructor(ruedas, capacidad, asiento, combustible, puertas){
+        super(ruedas, capacidad, asiento);// heredamos atributos del padre
+        this.combustible = combustible;// atributos especificos del automovil
+        this.puertas = puertas;
+    }
+    detalleAuto(){//concatenamos los detalles del objeto padre
+        return super.detalles() + `Combustible: ${this.combustible}, Puertas: ${this.puertas} `;
+    }
+}
+
+//3. declaracion de las constantes de la bicicleta y el automovil
+
+const bicicleta = new Bicileta (2, 1, 'simple', 'Montaña');
+const automovil = new Automovil (4, 5, 'dos simples y un triple', 'naftero', 5);
+
+//4. Zona impresion de los metodos
+console.log(bicicleta.detalleBici());
+console.log(automovil.detalleAuto());
